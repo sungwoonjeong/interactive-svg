@@ -6,10 +6,35 @@
   transition: all .5s linear;
 }
 
+#left-eye {
+  transition: all .5s linear;
+  animation: bounce 3s ease-out infinite;
+}
+
+#right-eye {
+  transition: all .5s linear;
+  animation: bounce 3s ease-out infinite;
+}
+
 #bear:hover #left-ear {
   transform: translateY(-10px);
 }
 
 #bear:hover #right-ear {
   transform: translateY(-10px);
+}
+
+@keyframes bounce {
+
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  50% {
+    transform: translate(30%, 0%);
+  }
+
+  100% {
+    transform: translate(-30%, 0%);
+  }
 }
